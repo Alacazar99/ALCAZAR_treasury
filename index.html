@@ -1,0 +1,21 @@
+this is test.html，，
+
+GGGGG
+def QucikSort(lis,start,end):
+    if start >= end:
+    	return 
+    mid = lis[start]
+    left = start
+    right = end
+    while left <= right：
+    	while left < right and lis[right] >= mid:
+	    right -= 1
+	lis[left] = lis[right]
+
+	while left < right and lis[left] < mid:
+	    left += 1
+	lis[right],lis[left] = lis[left],mid
+
+    QuickSort(lis,start,left -1)
+    QuickSort(lis,left + 1,end)
+
